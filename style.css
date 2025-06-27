@@ -1,4 +1,4 @@
-body {
+/* body {
   background: #121212;
   color: white;
   display: flex;
@@ -21,4 +21,68 @@ body {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
+} */
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.player {
+  background: #1e1e2f;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+#song-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #00e5ff;
+}
+
+audio {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+.controls button {
+  padding: 10px 20px;
+  background-color: #00e5ff;
+  border: none;
+  border-radius: 8px;
+  color: #1e1e2f;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.controls button:hover {
+  background-color: #00b3cc;
+  transform: scale(1.05);
+}
+
